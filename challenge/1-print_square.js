@@ -1,6 +1,7 @@
 #!/usr/bin/node
 
-const size = parseInt(process.argv[2]);
+// On ajoute explicitement le radix 10 pour le test automatique
+const size = parseInt(process.argv[2], 10);
 
 if (isNaN(size)) {
   console.log('Missing size');
@@ -12,6 +13,7 @@ if (isNaN(size)) {
       row += '#';
     }
 
+    // console.log ajoute automatiquement un retour à la ligne (\n)
     console.log(row);
   }
 }
