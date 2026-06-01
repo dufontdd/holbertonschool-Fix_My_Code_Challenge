@@ -1,2 +1,1 @@
-ARGV.map!(&:to_i)
-puts ARGV.sort
+puts ARGV.map(&:to_i).sort
